@@ -6,3 +6,12 @@ form {
   margin-left: 250px;
   margin-top: 125px;
 }
+
+#error1 , #error2 , #error3 , #error4 , #error5 , #error6 {
+  display: none;
+  color: tomato;
+}
+
+.row {
+  margin-bottom: 10px;  
+}

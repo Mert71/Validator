@@ -10,28 +10,56 @@
 </head>
 <body>
 
-
+<div class="container" style="height:100px;">
   <div class="alert alert-danger" role="alert" id="alert">
     Please enter all fields.
   </div>
+</div>
 
 <br>
-  <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
-  Name: <input type="text" name="fname" class="border border-primary"> <br>
-  <br>
-  Last Name: <input type="text" name="flastname" class="border border-primary"> <br>
-  <br>
-  ZIP: <input type="text" name="fzip" class="border border-primary"> <br>
-  <br>
-  Telephone: <input type="text" name="ftelephone" class="border border-primary"> <br>
-  <br>
-  Mail: <input type="text" name="fmail" class="border border-primary"> <br>
-  <br>
-  City: <input type="text" name="fcity" class="border border-primary"> <br>
-  <br>
+
+<div class="container">
+  <form name="myForm"  onsubmit="return validateForm()" method="post">
+
+<div class="row">
+    <div class="col-md-2">Name:</div>
+    <div class="col-md-5"><input type="text" autocomplete="off" name="fname" class="border border-primary"></div>
+    <div class="col-md-5"><p style="padding:0; margin:0;" id="error1">Please fill in your name.</p></div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">Last Name: </div>
+    <div class="col-md-5"><input type="text" autocomplete="off" name="flastname" class="border border-primary"></div>
+    <div class="col-md-5"><p style="padding:0; margin:0;" id="error2">Please fill in your last name.</p></div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">ZIP:</div>
+    <div class="col-md-5"><input type="text" autocomplete="off" name="fzip" class="border border-primary"> </div>
+    <div class="col-md-5"><p style="padding:0; margin:0;" id="error3">Please fill in your zip code.</p></div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">Telephone:</div>
+    <div class="col-md-5"><input type="text" autocomplete="off" name="ftelephone" class="border border-primary"> </div>
+    <div class="col-md-5"><p style="padding:0; margin:0;" id="error4">Please fill in your telephone.</p></div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">Mail:</div>
+    <div class="col-md-5"><input type="text" autocomplete="off" name="fmail" class="border border-primary"> </div>
+    <div class="col-md-5"><p style="padding:0; margin:0;" id="error5">Please fill in your mail.</p></div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">City:</div>
+    <div class="col-md-5"><input type="text" autocomplete="off" name="fcity" class="border border-primary"> </div>
+    <div class="col-md-5"><p style="padding:0; margin:0;" id="error6">Please fill in your city.</p></div>
+</div>
 
   <input type="submit" value="Submit" class="border border-success">
-  </form>
+</form>
+</div>
 
 
 

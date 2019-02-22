@@ -8,7 +8,11 @@ function validateForm() {
   var alert = document.getElementById('alert');
 
   if (name == "") {
-    alert.style.display = "absolute";
+    alert.style.display = "block";
+    document.getElementById('error1').style.display = "block";
+    setTimeout(function(){
+    document.getElementById('error1').style.display = "none";
+    }, 5000)
     setTimeout(function(){
     alert.style.display = "none";
     }, 2500)
@@ -16,6 +20,10 @@ function validateForm() {
   }
   if (lastname == "") {
     alert.style.display = "block";
+    document.getElementById('error2').style.display = "block";
+    setTimeout(function(){
+    document.getElementById('error2').style.display = "none";
+    }, 5000)
     setTimeout(function(){
     alert.style.display = "none";
     }, 2500)
@@ -23,6 +31,10 @@ function validateForm() {
   }
   if (zip == "") {
     alert.style.display = "block";
+    document.getElementById('error3').style.display = "block";
+    setTimeout(function(){
+    document.getElementById('error3').style.display = "none";
+    }, 5000)
     setTimeout(function(){
     alert.style.display = "none";
     }, 2500)
@@ -30,6 +42,10 @@ function validateForm() {
   }
   if (telephone == "") {
     alert.style.display = "block";
+    document.getElementById('error4').style.display = "block";
+    setTimeout(function(){
+    document.getElementById('error4').style.display = "none";
+    }, 5000)
     setTimeout(function(){
     alert.style.display = "none";
     }, 2500)
@@ -37,6 +53,10 @@ function validateForm() {
   }
   if (mail == "") {
     alert.style.display = "block";
+    document.getElementById('error5').style.display = "block";
+    setTimeout(function(){
+    document.getElementById('error5').style.display = "none";
+    }, 5000)
     setTimeout(function(){
     alert.style.display = "none";
     }, 2500)
@@ -44,6 +64,10 @@ function validateForm() {
   }
   if (city == "") {
     alert.style.display = "block";
+    document.getElementById('error6').style.display = "block";
+    setTimeout(function(){
+    document.getElementById('error6').style.display = "none";
+    }, 5000)
     setTimeout(function(){
     alert.style.display = "none";
     }, 2500)
