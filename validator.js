@@ -5,6 +5,10 @@ function validateForm() {
   var telephone = document.forms["myForm"]["ftelephone"].value;
   var mail = document.forms["myForm"]["fmail"].value;
   var city = document.forms["myForm"]["fcity"].value;
+  var artist = document.forms["myForm"]["fartist"].value;
+  var shoes = document.forms["myForm"]["fshoes"].value;
+  var game = document.forms["myForm"]["fgame"].value;
+
   var alert = document.getElementById('alert');
 
   if (name == "") {
@@ -67,6 +71,39 @@ function validateForm() {
     document.getElementById('error6').style.display = "block";
     setTimeout(function(){
     document.getElementById('error6').style.display = "none";
+    }, 5000)
+    setTimeout(function(){
+    alert.style.display = "none";
+    }, 2500)
+    return false;
+  }
+  if (artist == "") {
+    alert.style.display = "block";
+    document.getElementById('error7').style.display = "block";
+    setTimeout(function(){
+    document.getElementById('error7').style.display = "none";
+    }, 5000)
+    setTimeout(function(){
+    alert.style.display = "none";
+    }, 2500)
+    return false;
+  }
+  if (shoes == "") {
+    alert.style.display = "block";
+    document.getElementById('error8').style.display = "block";
+    setTimeout(function(){
+    document.getElementById('error8').style.display = "none";
+    }, 5000)
+    setTimeout(function(){
+    alert.style.display = "none";
+    }, 2500)
+    return false;
+  }
+  if (game == "") {
+    alert.style.display = "block";
+    document.getElementById('error9').style.display = "block";
+    setTimeout(function(){
+    document.getElementById('error9').style.display = "none";
     }, 5000)
     setTimeout(function(){
     alert.style.display = "none";
